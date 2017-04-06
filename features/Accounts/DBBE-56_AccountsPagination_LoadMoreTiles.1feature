@@ -1,0 +1,15 @@
+Feature: Accounts - pagination
+As a user
+I want the page to incrementally load my results
+So I don't get flooded with information all at once
+
+  Scenario: Login
+    Given I am logged in as a user
+      And Dashboard page is loaded
+      And Account page is opened
+      And Current Accounts are loaded
+
+  Scenario: Accounts page list view pagination - number of Credit cards > 12
+     When   User can see Load more button
+     Then   User clicks load more button
+     Then   User sees gt 12 credit cards

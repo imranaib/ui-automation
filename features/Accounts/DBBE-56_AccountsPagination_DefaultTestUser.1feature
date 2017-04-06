@@ -1,0 +1,32 @@
+Feature: Accounts - pagination
+  As a user
+  I want the page to incrementally load my results
+  So I don't get flooded with information all at once
+
+  Scenario: Precondition
+    Given 	I am logged in as a user
+      And   Dashboard page is loaded
+      And 	I click on Accounts button
+      And   Current Accounts are loaded
+      And 	I click the toggle table view button
+
+  Scenario: Accounts page list view pagination: number of Current accounts <=12
+     When 	User can see link Load more under Current Accounts list
+     When   User clicks load more current accounts
+     Then 	User has GT 12 Current accounts
+
+  Scenario: Accounts page list view pagination: number of Credit cards accounts <=12
+     When   User can see link Load more under Credit cards list
+     When   User clicks load more credit cards
+     Then 	User has GT 12 Credit cards
+
+  Scenario: Accounts page list view pagination: number of Deposit accounts <=12
+     When 	No link Load more under the Deposit accounts list
+     Then 	User has LTE to 12 Deposit accounts
+
+  Scenario: Accounts page list view pagination: number of Loan accounts <=12
+     When 	No link Load more under the Loan accounts list
+     Then 	User has LTE to 12 Loan accounts
+
+
+
