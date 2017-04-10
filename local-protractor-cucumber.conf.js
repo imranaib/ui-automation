@@ -9,12 +9,10 @@ exports.config = {
 
     specs: [
 
-        // 'features/Login/DBBB-153- Login page - Unsuccessful Login Attempt.feature',
+        'features/Login/DBBB-153- Login page - Unsuccessful Login Attempt.feature',
         'features/Login/DBBB-137- Login page - Login fields.feature',
-
-        // 'features/Accounts/DBBB-6_Filtering.feature',
-
-        // 'features/Login/DBBB-172-Logout - ConfirmCancel.feature'
+        'features/Accounts/DBBB-6_Filtering.feature',
+        'features/Login/DBBB-172-Logout - ConfirmCancel.feature'
 
 
 
