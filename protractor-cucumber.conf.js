@@ -4,8 +4,8 @@ exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    baseUrl: 'http://rhibbvd2.mid.aib.pri/',
-    // baseUrl: 'http://test.aib.backbasecloud.com/',
+    // baseUrl: 'http://rhibbvd2.mid.aib.pri/',
+    baseUrl: 'http://test.aib.backbasecloud.com/',
 
     specs: [
 
